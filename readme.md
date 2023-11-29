@@ -4,7 +4,7 @@ Ce code propose une implementation simple du chiffrement et du dechiffrement aff
 Le chiffrement affine est une technique de chiffrement par substitution ou chaque lettre dans le texte est remplace par une autre lettre selon une fonction mathematique affine.
 
 ##Fonctions
-
+@ghost.6255
 ###pgcd
 -Fonction pour calculer le PGCD(Plus Grand Commun Diviseur) de deux nombres.
 
