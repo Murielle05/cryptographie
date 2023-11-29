@@ -1,29 +1,32 @@
-#Chiffrement et Dechiffrement Affine
+# Chiffrement et Déchiffrement Polybe
 
-Ce code propose une implementation simple du chiffrement et du dechiffrement affine en utilisant Python.
-Le chiffrement affine est une technique de chiffrement par substitution ou chaque lettre dans le texte est remplace par une autre lettre selon une fonction mathematique affine.
+Ce projet propose une implémentation du chiffrement et du déchiffrement en utilisant la grille de Polybe. La structure du code est divisée en deux fichiers principaux : `function_polybe.py`, qui contient les fonctions pour la grille et les opérations de chiffrement, et `app.py`, le script principal pour utiliser ces fonctions.
 
-##Fonctions
+## Fonctions Polybe
 
-###pgcd
--Fonction pour calculer le PGCD(Plus Grand Commun Diviseur) de deux nombres.
+### `grille(cle)`
 
-###inverse
--Fonction pour calculer l'inverse modulaire d'un nombre
+La fonction `grille` prend une clé en entrée, la formate, et crée la grille de Polybe en utilisant cette clé.
 
-###crypt
--Fonction de chiffrement affine qui prend en parametres, le message a chiffrer('message'), une premiere cle ('cle1') et une deuxieme cle('cle2')
+### `position_letter(letter, grille_polybe)`
 
-###decrypt
--Fonction de dechiffrement affine qui prend en parametres, le message a dechiffrer('message'), une premiere cle ('cle1') et une deuxieme cle('cle2')
+La fonction `position_letter` trouve la position d'une lettre dans la grille de Polybe.
 
-##Utilisation
-Executez le script principal: 'python main.py'
+### `crypt_polybe(message, grille_polybe)`
 
-##Exemple
+La fonction `crypt_polybe` chiffre un message en utilisant la grille de Polybe.
 
-###Cryptage
--Choississez l'option C pour crypter et suivez les instructions
+### `decrypt_polybe(message, grille_polybe)`
 
-###Decryptage
--Choississez l'option D pour decrypter et suivez les instructions
+La fonction `decrypt_polybe` déchiffre un message en utilisant la grille de Polybe.
+
+## Utilisation dans `app.py`
+
+Le script `app.py` importe les fonctions du fichier `function_polybe.py` pour effectuer le chiffrement et le déchiffrement. L'utilisateur peut choisir entre crypter et décrypter en répondant à une invitation.
+
+## Exécution
+
+Pour l'execution dans le script `app.py`. Choisissez l'option "C" pour crypter et "D" pour décrypter.
+
+```bash
+python app.py
